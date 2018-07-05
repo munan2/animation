@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transform3d</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+            opacity: 0.5;
+        }
+        .aa:hover {
+            transition: transform 1s ease;
+            transform: rotateZ(180deg);
+        }
+        .bb:hover {
+            transform: rotateY(180deg);
+            transition: transform 1s ease;
+        }
+        .cc {
+            transform: rotateX(60deg);
+        }
+        .dd {
+            transform: rotateY(60deg);
+        }
+        .ee {
+            transform: rotateZ(60deg);
+        }
+        .box-container {
+            margin: 100px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            perspective: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="aa box">2d旋转</div>
+    <div class="bb box">3d旋转</div> -->
+    <div class="box-container">
+        <div class="cc box">rolateX(45deg)</div>
+    </div>
+    <div class="box-container">
+        <div class="dd box">rolateY(45deg)</div>
+    </div>
+    <div class="box-container">
+        <div class="ee box">rolateZ(45deg)</div>
+    </div>
+</body>
+</html>
