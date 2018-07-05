@@ -34,22 +34,42 @@
             width: 200px;
             height: 200px;
             border: 1px solid #000;
+        }
+        .right-box .box-container {
             perspective: 600px;
         }
-
+        .left-box, .right-box {
+            float: left;
+            width: 200px;
+            margin-left: 50px;
+        }
     </style>
 </head>
 <body>
     <!-- <div class="aa box">2d旋转</div>
     <div class="bb box">3d旋转</div> -->
-    <div class="box-container">
-        <div class="cc box">rolateX(45deg)</div>
+    <div class="left-box">
+        <div class="box-container">
+            <div class="cc box">rolateX(45deg)</div>
+        </div>
+        <div class="box-container">
+            <div class="dd box">rolateY(45deg)</div>
+        </div>
+        <div class="box-container">
+            <div class="ee box">rolateZ(45deg)</div>
+        </div>
     </div>
-    <div class="box-container">
-        <div class="dd box">rolateY(45deg)</div>
+    <div class="right-box">
+        <div class="box-container">
+            <div class="cc box">rolateX(45deg)</div>
+        </div>
+        <div class="box-container">
+            <div class="dd box">rolateY(45deg)</div>
+        </div>
+        <div class="box-container">
+            <div class="ee box">rolateZ(45deg)</div>
+        </div>
     </div>
-    <div class="box-container">
-        <div class="ee box">rolateZ(45deg)</div>
-    </div>
+   
 </body>
 </html>

@@ -152,6 +152,11 @@ perspective-origin: x-axis y-axis;
         <div class="ee box">rolateZ(45deg)</div>
     </div>
 ```
-其效果如下：
+不加perspective: 600px;其效果图如下左图，加上perspective: 600px;其效果图如右图：
 ![](002.png)
+这里如果不加上perspective这个属性，你会发现图像还是平面的效果，但是加上这个属性给视点到浏览器一个视觉距离之后，会看到一个3d的效果。
+## 3D效果
+注意有一个属性。transform-style: preserve-3d的属性设置，默认值为flat，即“素描作品”。这个属性的设置旨在告诉子元素需要遵循怎样的空间体系规则。这个属性不能继承，因此只要有子元素需要设置空间体系规则，就得在父元素声明这个属性。
 
+
+!(http://lyxuncle.github.io/pageturning/demo/demo.html)
